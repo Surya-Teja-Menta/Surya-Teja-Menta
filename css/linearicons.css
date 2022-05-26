@@ -365,6 +365,9 @@
 }
 .lnr-menu:before {
 	content: "\e871";
+	color: #aaa;
+	border-radius: 5px;
+
 }
 .lnr-list:before {
 	content: "\e872";
@@ -404,6 +407,9 @@
 }
 .lnr-menu-circle:before {
 	content: "\e87e";
+	color: #aaa;
+	border-radius: 5px;
+
 }
 .lnr-checkmark-circle:before {
 	content: "\e87f";
