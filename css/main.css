@@ -2109,6 +2109,9 @@ h1, h2, h3, h4, h5, h6 {
   border-color: transparent;
 }
 
+#logo {
+  color: #ede;
+}
 @media (max-width: 673px) {
   #logo {
     margin-left: 20px;
