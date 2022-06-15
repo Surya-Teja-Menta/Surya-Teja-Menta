@@ -107,6 +107,7 @@
 }
 .lnr-eye:before {
 	content: "\e81b";
+	color:#eee;
 }
 .lnr-printer:before {
 	content: "\e81c";
@@ -146,6 +147,7 @@
 }
 .lnr-book:before {
 	content: "\e828";
+	color: #eee;
 }
 .lnr-bookmark:before {
 	content: "\e829";
@@ -209,6 +211,7 @@
 }
 .lnr-laptop-phone:before {
 	content: "\e83d";
+	color: #eee;
 }
 .lnr-power-switch:before {
 	content: "\e83e";
@@ -227,6 +230,7 @@
 }
 .lnr-chart-bars:before {
 	content: "\e843";
+	color: #eee;
 }
 .lnr-gift:before {
 	content: "\e844";
@@ -458,6 +462,7 @@
 }
 .lnr-layers:before {
 	content: "\e88e";
+	color: #eee;
 }
 .lnr-funnel:before {
 	content: "\e88f";
