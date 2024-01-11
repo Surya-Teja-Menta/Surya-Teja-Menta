@@ -29,27 +29,12 @@
 			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/owl.carousel.css">
 			<link rel="stylesheet" href="css/main.css">
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-			<script src="js/typed.js"></script>
-			
-			
-			
-			</script>
-			<script>
-				if ($(".text-slider").length == 1) {
-					var typed = new Typed(".text-slider-items", {
-						strings: ["Surya Teja Menta","A Data Scientist"],
-						typeSpeed: 50,
-						loop: true,
-						backDelay: 900,
-						backSpeed: 30,
-					});
-				}
-			</script>
+
 			
 		</head>
 
 		<body>
+			<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 			<header id="header">
 	      <div class="container main-menu">
 	        <div class="row align-items-right justify-content-between d-flex">
@@ -75,10 +60,17 @@
 				<div class="container">
 					<div class="row fullscreen align-items-center justify-content-between">
 						<div class="col-lg-6 col-md-6 col-xs-6 banner-left">
-							<h5 class ="norm">I am</h5>
+							<h4 class ="norm">I am</h4>
 
-							<h2 class="mt-10 mb-20 text-slider-items norm">Surya Teja Menta</h2>
-							<h2 class="text-slider"></h2>
+							<h2 class="mt-10 mb-20 text-slider-items norm"><span id="element"></span></h2>
+							<script>
+								var typed = new Typed('#element', {
+								  strings: ['Surya Teja Menta', 'Data Scientist'],
+								  typeSpeed: 50,
+								  backSpeed: 50,
+								  loop: true
+								});
+							  </script>
 							
 							<a href="archive.html" class="primary-btn text-uppercase mb-20">My Projects</a>
 						</div>
