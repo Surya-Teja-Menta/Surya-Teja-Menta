@@ -15,7 +15,139 @@
 		<meta charset="UTF-8">
 		<!-- Site Title -->
 		<title>S U R Y A</title>
-
+		<style>
+			/* Base responsive styles */
+			body {
+				overflow-x: hidden;
+			}
+			
+			/* Responsive container adjustments */
+			.container {
+				width: 100%;
+				padding-right: 15px;
+				padding-left: 15px;
+				margin-right: auto;
+				margin-left: auto;
+			}
+			
+			/* Header and navigation adjustments */
+			.main-menu {
+				padding: 1rem 0;
+			}
+			
+			@media (max-width: 768px) {
+				.main-menu {
+					padding: 0.5rem 0;
+				}
+				
+				.main-menu .row {
+					flex-direction: column;
+					align-items: center;
+				}
+				
+				#logo {
+					margin-bottom: 1rem;
+					text-align: center;
+				}
+				
+				.main-menu ul {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					width: 100%;
+					padding: 0;
+				}
+				
+				.main-menu li {
+					margin: 0.5rem 0;
+				}
+			}
+			
+			/* Banner area responsive adjustments */
+			@media (max-width: 768px) {
+				.banner-area .row {
+					flex-direction: column-reverse;
+				}
+				
+				.banner-left, .banner-right {
+					width: 100%;
+					text-align: center;
+					padding: 1rem;
+				}
+				
+				.banner-right img {
+					max-width: 80%;
+					margin: 0 auto;
+				}
+			}
+			
+			/* Projects and blog cards responsive adjustments */
+			@media (max-width: 768px) {
+				.single-recent-blog {
+					width: 100%;
+					margin-bottom: 2rem;
+				}
+				
+				.thumb img {
+					width: 100%;
+					height: auto;
+				}
+			}
+			
+			/* Skills section responsive adjustments */
+			@media (max-width: 768px) {
+				.skillbar-wraps .col-lg-4 {
+					margin-bottom: 2rem;
+				}
+				
+				.skill-right {
+					padding: 0 1rem;
+				}
+			}
+			
+			/* Other platforms section responsive adjustments */
+			@media (max-width: 768px) {
+				.price-area .row {
+					justify-content: center;
+				}
+				
+				.single-price {
+					width: 50%;
+					margin-bottom: 1rem;
+				}
+			}
+			
+			/* Portfolio project cards responsive adjustments */
+			@media (max-width: 768px) {
+				.post-preview {
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+					margin-bottom: 2rem;
+				}
+				
+				.post-preview .col-lg-3 {
+					margin-bottom: 1rem;
+				}
+				
+				.portfolio-photo {
+					max-width: 200px;
+					margin: 0 auto;
+				}
+			}
+			
+			/* Personal details section responsive adjustments */
+			@media (max-width: 768px) {
+				.personal-details {
+					padding: 1rem;
+				}
+				
+				.personal-details blockquote {
+					margin: 1rem 0;
+					padding: 1rem;
+				}
+			}
+			</style>
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 			<!--
 			CSS
@@ -33,26 +165,22 @@
 
 		<body>
 			<header id="header">
-	      <div class="container main-menu">
-	        <div class="row align-items-center justify-content-between d-flex">
-				<div class id="logo">
-					<a href="https://suryatejamenta.co.in/"><h3 class="log">Surya Teja Menta</h3></a>
-				 </div>
-	          
-	          <nav id="nav-menu-container">
-	            <ul class="nav-menu">
-	              <li><a href="https://suryatejamenta.co.in/">Home</a></li>
-	              <li><a href="about.html">About</a></li>
-
-
-	              <li><a href="archive.html">Portfolio</a></li>
-	              <li><a href="resume.pdf" class="genric-btn primary-border circle" target="_blank">Resume</a></li>
-	              </ul>
-
-	          </nav><!-- #nav-menu-container -->
-	        </div>
-	      </div>
-	    </header><!-- #header -->
+				<div class="container main-menu">
+					<div class="row align-items-center justify-content-between d-flex">
+						<div id="logo">
+							<h3 class="log">Surya Teja Menta</h3>
+						</div>
+						<nav id="nav-menu-container">
+							<ul class="nav-menu">
+								<li><a href="https://suryatejamenta.co.in/">Home</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="archive.html">Portfolio</a></li>
+								<li><a href="resume.pdf" class="genric-btn primary-border circle" target="_blank">Resume</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
 			
 
 			<!-- Start home-about Area -->
@@ -198,7 +326,37 @@
 			<script src="js/mail-script.js"></script>
 			<script src="js/scroll.js"></script>
 			<script src="js/main.js"></script>
-
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					const navMenu = document.querySelector('.nav-menu');
+					const menuToggle = document.createElement('button');
+					menuToggle.className = 'menu-toggle';
+					menuToggle.innerHTML = '☰';
+					menuToggle.style.display = 'none';
+					
+					const logo = document.querySelector('#logo');
+					logo.parentNode.insertBefore(menuToggle, logo.nextSibling);
+					
+					function toggleMenu() {
+						navMenu.classList.toggle('active');
+					}
+					
+					menuToggle.addEventListener('click', toggleMenu);
+					
+					function checkScreenSize() {
+						if (window.innerWidth <= 768) {
+							menuToggle.style.display = 'block';
+							navMenu.classList.remove('active');
+						} else {
+							menuToggle.style.display = 'none';
+							navMenu.classList.remove('active');
+						}
+					}
+					
+					window.addEventListener('resize', checkScreenSize);
+					checkScreenSize();
+				});
+				</script>
 
 		</body>
 	</html>
