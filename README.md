@@ -1,8 +1,8 @@
 # Hi there! 👋
 
-I'm Surya Teja Menta, a Data Analyst and Data Scientist with 2+ years of experience in data analysis, data visualization, and machine learning.
+I'm Surya Teja Menta, a Data Analyst and Data Scientist with 3+ years of experience in Data Science, Generative AI, and machine learning.
 
-🔭 I'm currently working at Tudip Technologies as a Data Analyst, where I'm involved in the Google LX Project, also known as Google Seismic.
+🔭 I'm currently working at Robert Bosch as a Senior Data Scientist
 
 🌱 I'm proficient in Python, and I have experience with data science and machine learning libraries such as NumPy, Pandas, Scikit-learn, Tensorflow, Keras, and Pytorch.
 
