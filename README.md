@@ -1,10 +1,10 @@
 # Hi there! 👋
 
-I'm Surya Teja Menta, a Data Analyst and Data Scientist with 3+ years of experience in Data Science, Generative AI, and machine learning.
+I'm Surya Teja Menta, a Senior Data Scientist with 3+ years of experience in Data Science, Generative AI, and machine learning.
 
 🔭 I'm currently working at Robert Bosch as a Senior Data Scientist
 
-🌱 I'm proficient in Python, and I have experience with data science and machine learning libraries such as NumPy, Pandas, Scikit-learn, Tensorflow, Keras, and Pytorch.
+🌱 I'm proficient in Python, and I have experience with data science and machine learning libraries such as Transformers, Pandas, Scikit-learn, Tensorflow, Keras, and Pytorch.
 
 💬 I love writing about data science and machine learning on my blog at Medium, Substack, and Tealfeed. You can check out some of my latest blog posts below.
 
@@ -12,11 +12,11 @@ I'm Surya Teja Menta, a Data Analyst and Data Scientist with 3+ years of experie
 
 ## Professional Skills
 
-👨‍💻 Data Science | Machine Learning | Deep Learning | NLP | CV
+👨‍💻 Data Science | Machine Learning | Deep Learning | NLP | CV | LLM
 
 💻 Python | HTML | CSS | Web Development | SQL
 
-🔧 Tensorflow | Pytorch | Keras | Opencv | Spacy | NLTK
+🔧 Tensorflow | Pytorch | Keras | Opencv | Spacy | NLTK | Transformers
 
 📊 Google Datastudio | Git | GitHub
 
