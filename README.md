@@ -12,7 +12,7 @@ I'm Surya Teja Menta, a Senior Data Scientist with 3+ years of experience in Dat
 
 ## Professional Skills
 
-👨‍💻 Data Science | Machine Learning | Deep Learning | NLP | CV | LLM
+👨‍💻 Gen AI | Data Science | Machine Learning | Deep Learning | NLP | CV | LLM
 
 💻 Python | HTML | CSS | Web Development | SQL
 
